@@ -1,0 +1,645 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Oct  1 16:56:34 2023
+# Process ID: 1516
+# Current directory: E:/Testing_on_card/Testing_on_ZEDBOARD.runs/Global_Linear_Trasnformation_0_0_synth_1
+# Command line: vivado.exe -log Global_Linear_Trasnformation_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Global_Linear_Trasnformation_0_0.tcl
+# Log file: E:/Testing_on_card/Testing_on_ZEDBOARD.runs/Global_Linear_Trasnformation_0_0_synth_1/Global_Linear_Trasnformation_0_0.vds
+# Journal file: E:/Testing_on_card/Testing_on_ZEDBOARD.runs/Global_Linear_Trasnformation_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source Global_Linear_Trasnformation_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/ip_repo/myip_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/ip_repo/Linear_Trasnformation_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Vivado_2019v1/Vivado/2019.1/data/ip'.
+Command: synth_design -top Global_Linear_Trasnformation_0_0 -part xc7z020clg484-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4212 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 832.371 ; gain = 177.883
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Global_Linear_Trasnformation_0_0' [e:/Testing_on_card/Testing_on_ZEDBOARD.srcs/sources_1/bd/Global/ip/Global_Linear_Trasnformation_0_0/synth/Global_Linear_Trasnformation_0_0.vhd:82]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'Linear_Trasnformation_v1_0' declared at 'e:/Testing_on_card/Testing_on_ZEDBOARD.srcs/sources_1/bd/Global/ipshared/908c/hdl/Linear_Trasnformation_v1_0.vhd:5' bound to instance 'U0' of component 'Linear_Trasnformation_v1_0' [e:/Testing_on_card/Testing_on_ZEDBOARD.srcs/sources_1/bd/Global/ip/Global_Linear_Trasnformation_0_0/synth/Global_Linear_Trasnformation_0_0.vhd:148]
+INFO: [Synth 8-638] synthesizing module 'Linear_Trasnformation_v1_0' [e:/Testing_on_card/Testing_on_ZEDBOARD.srcs/sources_1/bd/Global/ipshared/908c/hdl/Linear_Trasnformation_v1_0.vhd:49]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'Linear_Trasnformation_v1_0_S00_AXI' declared at 'e:/Testing_on_card/Testing_on_ZEDBOARD.srcs/sources_1/bd/Global/ipshared/908c/hdl/Linear_Trasnformation_v1_0_S00_AXI.vhd:5' bound to instance 'Linear_Trasnformation_v1_0_S00_AXI_inst' of component 'Linear_Trasnformation_v1_0_S00_AXI' [e:/Testing_on_card/Testing_on_ZEDBOARD.srcs/sources_1/bd/Global/ipshared/908c/hdl/Linear_Trasnformation_v1_0.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'Linear_Trasnformation_v1_0_S00_AXI' [e:/Testing_on_card/Testing_on_ZEDBOARD.srcs/sources_1/bd/Global/ipshared/908c/hdl/Linear_Trasnformation_v1_0_S00_AXI.vhd:90]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter full_bits bound to: 128 - type: integer 
+	Parameter div4_bits bound to: 32 - type: integer 
+	Parameter full_key_size bound to: 256 - type: integer 
+	Parameter four_bits bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'Linear_trans_File' declared at 'e:/Testing_on_card/Testing_on_ZEDBOARD.srcs/sources_1/bd/Global/Testing_on_card/Testing_on_ZEDBOARD.srcs/Linear_trans_File.vhd:12' bound to instance 'LT' of component 'Linear_trans_File' [e:/Testing_on_card/Testing_on_ZEDBOARD.srcs/sources_1/bd/Global/ipshared/908c/hdl/Linear_Trasnformation_v1_0_S00_AXI.vhd:151]
+INFO: [Synth 8-638] synthesizing module 'Linear_trans_File' [e:/Testing_on_card/Testing_on_ZEDBOARD.srcs/sources_1/bd/Global/Testing_on_card/Testing_on_ZEDBOARD.srcs/Linear_trans_File.vhd:26]
+	Parameter full_bits bound to: 128 - type: integer 
+	Parameter div4_bits bound to: 32 - type: integer 
+WARNING: [Synth 8-614] signal 'sig_Bi_input' is read in the process but is not in the sensitivity list [e:/Testing_on_card/Testing_on_ZEDBOARD.srcs/sources_1/bd/Global/Testing_on_card/Testing_on_ZEDBOARD.srcs/Linear_trans_File.vhd:196]
+INFO: [Synth 8-256] done synthesizing module 'Linear_trans_File' (1#1) [e:/Testing_on_card/Testing_on_ZEDBOARD.srcs/sources_1/bd/Global/Testing_on_card/Testing_on_ZEDBOARD.srcs/Linear_trans_File.vhd:26]
+INFO: [Synth 8-226] default block is never used [e:/Testing_on_card/Testing_on_ZEDBOARD.srcs/sources_1/bd/Global/ipshared/908c/hdl/Linear_Trasnformation_v1_0_S00_AXI.vhd:260]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 2 wide and choice expression is 3 wide [e:/Testing_on_card/Testing_on_ZEDBOARD.srcs/sources_1/bd/Global/ipshared/908c/hdl/Linear_Trasnformation_v1_0_S00_AXI.vhd:391]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 2 wide and choice expression is 3 wide [e:/Testing_on_card/Testing_on_ZEDBOARD.srcs/sources_1/bd/Global/ipshared/908c/hdl/Linear_Trasnformation_v1_0_S00_AXI.vhd:393]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 2 wide and choice expression is 3 wide [e:/Testing_on_card/Testing_on_ZEDBOARD.srcs/sources_1/bd/Global/ipshared/908c/hdl/Linear_Trasnformation_v1_0_S00_AXI.vhd:395]
+WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 2 wide and choice expression is 3 wide [e:/Testing_on_card/Testing_on_ZEDBOARD.srcs/sources_1/bd/Global/ipshared/908c/hdl/Linear_Trasnformation_v1_0_S00_AXI.vhd:397]
+INFO: [Synth 8-226] default block is never used [e:/Testing_on_card/Testing_on_ZEDBOARD.srcs/sources_1/bd/Global/ipshared/908c/hdl/Linear_Trasnformation_v1_0_S00_AXI.vhd:390]
+WARNING: [Synth 8-614] signal 'sig_Bi_output' is read in the process but is not in the sensitivity list [e:/Testing_on_card/Testing_on_ZEDBOARD.srcs/sources_1/bd/Global/ipshared/908c/hdl/Linear_Trasnformation_v1_0_S00_AXI.vhd:448]
+WARNING: [Synth 8-6014] Unused sequential element loc_addr_reg was removed.  [e:/Testing_on_card/Testing_on_ZEDBOARD.srcs/sources_1/bd/Global/ipshared/908c/hdl/Linear_Trasnformation_v1_0_S00_AXI.vhd:258]
+INFO: [Synth 8-256] done synthesizing module 'Linear_Trasnformation_v1_0_S00_AXI' (2#1) [e:/Testing_on_card/Testing_on_ZEDBOARD.srcs/sources_1/bd/Global/ipshared/908c/hdl/Linear_Trasnformation_v1_0_S00_AXI.vhd:90]
+INFO: [Synth 8-256] done synthesizing module 'Linear_Trasnformation_v1_0' (3#1) [e:/Testing_on_card/Testing_on_ZEDBOARD.srcs/sources_1/bd/Global/ipshared/908c/hdl/Linear_Trasnformation_v1_0.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'Global_Linear_Trasnformation_0_0' (4#1) [e:/Testing_on_card/Testing_on_ZEDBOARD.srcs/sources_1/bd/Global/ip/Global_Linear_Trasnformation_0_0/synth/Global_Linear_Trasnformation_0_0.vhd:82]
+WARNING: [Synth 8-3331] design Linear_Trasnformation_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design Linear_Trasnformation_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design Linear_Trasnformation_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design Linear_Trasnformation_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design Linear_Trasnformation_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design Linear_Trasnformation_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 899.320 ; gain = 244.832
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 899.320 ; gain = 244.832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 899.320 ; gain = 244.832
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1016.438 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 1018.547 ; gain = 2.109
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1018.547 ; gain = 364.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1018.547 ; gain = 364.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1018.547 ; gain = 364.059
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Linear_trans_File'
+INFO: [Synth 8-5544] ROM "ready_busy" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "start_processing" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "X0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "X1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "X2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "X3" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "SPLITTING_done" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "INTERMEDIATE_done" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LT_done0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_xoring" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LT_done1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LT_done2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LT_done3" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LT_done4" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LT_done5" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "subs_done" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sig_Bi_output" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'ready_busy_reg' [e:/Testing_on_card/Testing_on_ZEDBOARD.srcs/sources_1/bd/Global/Testing_on_card/Testing_on_ZEDBOARD.srcs/Linear_trans_File.vhd:209]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0000 |                             0000
+               splitting |                             0001 |                             1000
+            intermediate |                             0010 |                             0111
+                     lt0 |                             0011 |                             0001
+                     lt1 |                             0100 |                             0010
+                     lt2 |                             0101 |                             0011
+                     lt3 |                             0110 |                             0100
+                     lt4 |                             0111 |                             0101
+                     lt5 |                             1000 |                             0110
+                     lt6 |                             1001 |                             1001
+           merging_state |                             1010 |                             1011
+             lt_finished |                             1011 |                             1010
+                  iSTATE |                             1100 |                             1111
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'Linear_trans_File'
+WARNING: [Synth 8-327] inferring latch for variable 'sig_Bi_output_reg' [e:/Testing_on_card/Testing_on_ZEDBOARD.srcs/sources_1/bd/Global/Testing_on_card/Testing_on_ZEDBOARD.srcs/Linear_trans_File.vhd:290]
+WARNING: [Synth 8-327] inferring latch for variable 'start_processing_reg' [e:/Testing_on_card/Testing_on_ZEDBOARD.srcs/sources_1/bd/Global/Testing_on_card/Testing_on_ZEDBOARD.srcs/Linear_trans_File.vhd:138]
+WARNING: [Synth 8-327] inferring latch for variable 'SPLITTING_done_reg' [e:/Testing_on_card/Testing_on_ZEDBOARD.srcs/sources_1/bd/Global/Testing_on_card/Testing_on_ZEDBOARD.srcs/Linear_trans_File.vhd:143]
+WARNING: [Synth 8-327] inferring latch for variable 'INTERMEDIATE_done_reg' [e:/Testing_on_card/Testing_on_ZEDBOARD.srcs/sources_1/bd/Global/Testing_on_card/Testing_on_ZEDBOARD.srcs/Linear_trans_File.vhd:148]
+WARNING: [Synth 8-327] inferring latch for variable 'LT_done0_reg' [e:/Testing_on_card/Testing_on_ZEDBOARD.srcs/sources_1/bd/Global/Testing_on_card/Testing_on_ZEDBOARD.srcs/Linear_trans_File.vhd:153]
+WARNING: [Synth 8-327] inferring latch for variable 'LT_done1_reg' [e:/Testing_on_card/Testing_on_ZEDBOARD.srcs/sources_1/bd/Global/Testing_on_card/Testing_on_ZEDBOARD.srcs/Linear_trans_File.vhd:157]
+WARNING: [Synth 8-327] inferring latch for variable 'LT_done2_reg' [e:/Testing_on_card/Testing_on_ZEDBOARD.srcs/sources_1/bd/Global/Testing_on_card/Testing_on_ZEDBOARD.srcs/Linear_trans_File.vhd:161]
+WARNING: [Synth 8-327] inferring latch for variable 'LT_done3_reg' [e:/Testing_on_card/Testing_on_ZEDBOARD.srcs/sources_1/bd/Global/Testing_on_card/Testing_on_ZEDBOARD.srcs/Linear_trans_File.vhd:165]
+WARNING: [Synth 8-327] inferring latch for variable 'LT_done4_reg' [e:/Testing_on_card/Testing_on_ZEDBOARD.srcs/sources_1/bd/Global/Testing_on_card/Testing_on_ZEDBOARD.srcs/Linear_trans_File.vhd:169]
+WARNING: [Synth 8-327] inferring latch for variable 'LT_done5_reg' [e:/Testing_on_card/Testing_on_ZEDBOARD.srcs/sources_1/bd/Global/Testing_on_card/Testing_on_ZEDBOARD.srcs/Linear_trans_File.vhd:173]
+WARNING: [Synth 8-327] inferring latch for variable 'subs_done_reg' [e:/Testing_on_card/Testing_on_ZEDBOARD.srcs/sources_1/bd/Global/Testing_on_card/Testing_on_ZEDBOARD.srcs/Linear_trans_File.vhd:177]
+WARNING: [Synth 8-327] inferring latch for variable 'merging_done_reg' [e:/Testing_on_card/Testing_on_ZEDBOARD.srcs/sources_1/bd/Global/Testing_on_card/Testing_on_ZEDBOARD.srcs/Linear_trans_File.vhd:181]
+WARNING: [Synth 8-327] inferring latch for variable 'finished_done_reg' [e:/Testing_on_card/Testing_on_ZEDBOARD.srcs/sources_1/bd/Global/Testing_on_card/Testing_on_ZEDBOARD.srcs/Linear_trans_File.vhd:185]
+WARNING: [Synth 8-327] inferring latch for variable 'X0_reg' [e:/Testing_on_card/Testing_on_ZEDBOARD.srcs/sources_1/bd/Global/Testing_on_card/Testing_on_ZEDBOARD.srcs/Linear_trans_File.vhd:217]
+WARNING: [Synth 8-327] inferring latch for variable 'X3_reg' [e:/Testing_on_card/Testing_on_ZEDBOARD.srcs/sources_1/bd/Global/Testing_on_card/Testing_on_ZEDBOARD.srcs/Linear_trans_File.vhd:220]
+WARNING: [Synth 8-327] inferring latch for variable 'X1_reg' [e:/Testing_on_card/Testing_on_ZEDBOARD.srcs/sources_1/bd/Global/Testing_on_card/Testing_on_ZEDBOARD.srcs/Linear_trans_File.vhd:218]
+WARNING: [Synth 8-327] inferring latch for variable 'X2_reg' [e:/Testing_on_card/Testing_on_ZEDBOARD.srcs/sources_1/bd/Global/Testing_on_card/Testing_on_ZEDBOARD.srcs/Linear_trans_File.vhd:219]
+WARNING: [Synth 8-327] inferring latch for variable 'tmp_xoring_reg' [e:/Testing_on_card/Testing_on_ZEDBOARD.srcs/sources_1/bd/Global/Testing_on_card/Testing_on_ZEDBOARD.srcs/Linear_trans_File.vhd:247]
+WARNING: [Synth 8-327] inferring latch for variable 'tmp2_reg' [e:/Testing_on_card/Testing_on_ZEDBOARD.srcs/sources_1/bd/Global/Testing_on_card/Testing_on_ZEDBOARD.srcs/Linear_trans_File.vhd:285]
+WARNING: [Synth 8-327] inferring latch for variable 'slv_reg3_reg' [e:/Testing_on_card/Testing_on_ZEDBOARD.srcs/sources_1/bd/Global/ipshared/908c/hdl/Linear_Trasnformation_v1_0_S00_AXI.vhd:451]
+WARNING: [Synth 8-327] inferring latch for variable 'slv_reg2_reg' [e:/Testing_on_card/Testing_on_ZEDBOARD.srcs/sources_1/bd/Global/ipshared/908c/hdl/Linear_Trasnformation_v1_0_S00_AXI.vhd:450]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1018.547 ; gain = 364.059
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 3     
+	   3 Input     32 Bit         XORs := 1     
++---Registers : 
+	              128 Bit    Registers := 2     
+	               32 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	  13 Input     32 Bit        Muxes := 5     
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 3     
+	  13 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 7     
+	  13 Input      1 Bit        Muxes := 19    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Linear_trans_File 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 3     
+	   3 Input     32 Bit         XORs := 1     
++---Muxes : 
+	  13 Input     32 Bit        Muxes := 5     
+	  13 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+	  13 Input      1 Bit        Muxes := 19    
+Module Linear_Trasnformation_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	              128 Bit    Registers := 2     
+	               32 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design Global_Linear_Trasnformation_0_0 has unconnected port s00_axi_awprot[2]
+WARNING: [Synth 8-3331] design Global_Linear_Trasnformation_0_0 has unconnected port s00_axi_awprot[1]
+WARNING: [Synth 8-3331] design Global_Linear_Trasnformation_0_0 has unconnected port s00_axi_awprot[0]
+WARNING: [Synth 8-3331] design Global_Linear_Trasnformation_0_0 has unconnected port s00_axi_arprot[2]
+WARNING: [Synth 8-3331] design Global_Linear_Trasnformation_0_0 has unconnected port s00_axi_arprot[1]
+WARNING: [Synth 8-3331] design Global_Linear_Trasnformation_0_0 has unconnected port s00_axi_arprot[0]
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[63]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[95]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[62]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[94]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[61]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[93]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[60]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[92]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[59]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[91]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[58]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[90]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[57]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[89]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[56]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[88]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[55]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[87]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[54]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[86]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[53]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[85]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[52]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[84]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[51]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[83]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[50]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[82]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[49]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[81]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[48]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[80]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[47]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[79]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[46]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[78]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[45]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[77]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[44]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[76]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[43]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[75]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[42]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[74]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[41]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[73]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[40]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[72]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[39]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[71]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[38]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[70]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[37]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[69]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[36]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[68]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[35]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[67]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[34]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[66]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[33]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[65]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[32]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[64]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[64]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[96]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/sig_Bi_input_reg[63]' (FDE) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/sig_Bi_input_reg[96]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/sig_Bi_input_reg[95]' (FDE) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/sig_Bi_input_reg[96]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[127]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[96]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/sig_Bi_input_reg[62]' (FDE) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/sig_Bi_input_reg[127]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/sig_Bi_input_reg[94]' (FDE) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/sig_Bi_input_reg[127]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[126]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[96]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/sig_Bi_input_reg[61]' (FDE) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/sig_Bi_input_reg[127]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/sig_Bi_input_reg[93]' (FDE) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/sig_Bi_input_reg[127]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[125]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[96]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/sig_Bi_input_reg[60]' (FDE) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/sig_Bi_input_reg[127]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/sig_Bi_input_reg[92]' (FDE) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/sig_Bi_input_reg[127]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[124]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[96]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/sig_Bi_input_reg[59]' (FDE) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/sig_Bi_input_reg[127]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/sig_Bi_input_reg[91]' (FDE) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/sig_Bi_input_reg[127]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[123]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[96]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/sig_Bi_input_reg[58]' (FDE) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/sig_Bi_input_reg[127]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/sig_Bi_input_reg[90]' (FDE) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/sig_Bi_input_reg[127]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[122]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[96]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/sig_Bi_input_reg[57]' (FDE) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/sig_Bi_input_reg[127]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/sig_Bi_input_reg[89]' (FDE) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/sig_Bi_input_reg[127]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[121]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[96]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/sig_Bi_input_reg[56]' (FDE) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/sig_Bi_input_reg[127]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/sig_Bi_input_reg[88]' (FDE) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/sig_Bi_input_reg[127]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[120]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[96]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/sig_Bi_input_reg[55]' (FDE) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/sig_Bi_input_reg[127]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/sig_Bi_input_reg[87]' (FDE) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/sig_Bi_input_reg[127]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[119]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[96]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/sig_Bi_input_reg[54]' (FDE) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/sig_Bi_input_reg[127]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/sig_Bi_input_reg[86]' (FDE) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/sig_Bi_input_reg[127]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[118]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[96]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/sig_Bi_input_reg[53]' (FDE) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/sig_Bi_input_reg[127]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/sig_Bi_input_reg[85]' (FDE) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/sig_Bi_input_reg[127]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[117]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[96]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/sig_Bi_input_reg[52]' (FDE) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/sig_Bi_input_reg[127]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/sig_Bi_input_reg[84]' (FDE) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/sig_Bi_input_reg[127]'
+INFO: [Synth 8-3886] merging instance 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[116]' (FDR) to 'U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[96]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/Linear_Trasnformation_v1_0_S00_AXI_inst/input_holder_reg[96] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/tmp_xoring_reg[29] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/finished_done_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/merging_done_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/subs_done_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/LT_done5_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/LT_done4_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/LT_done3_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/LT_done2_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/LT_done1_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/LT_done0_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/INTERMEDIATE_done_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/SPLITTING_done_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/start_processing_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/Linear_Trasnformation_v1_0_S00_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/Linear_Trasnformation_v1_0_S00_AXI_inst/axi_bresp_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/Linear_Trasnformation_v1_0_S00_AXI_inst/sig_Bi_input_reg[96] )
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[32]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[33]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[34]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[35]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[36]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[37]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[38]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[39]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[40]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[41]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[42]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[43]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[44]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[45]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[46]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[47]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[48]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[49]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[50]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[51]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[52]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[53]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[54]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[55]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[56]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[57]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[58]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[59]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[60]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[61]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[62]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[63]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[64]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[65]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[66]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[67]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[68]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[69]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[70]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[71]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[72]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[73]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[74]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[75]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[76]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[77]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[78]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[79]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[80]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[81]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[82]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[83]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[84]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[85]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[86]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[87]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[88]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[89]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[90]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[91]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[92]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[93]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[94]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[95]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/start_processing_reg) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/SPLITTING_done_reg) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/INTERMEDIATE_done_reg) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/LT_done0_reg) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/LT_done1_reg) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/LT_done2_reg) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/LT_done3_reg) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/LT_done4_reg) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/LT_done5_reg) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/subs_done_reg) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/merging_done_reg) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/finished_done_reg) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/tmp_xoring_reg[29]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/tmp2_reg[32]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/tmp2_reg[33]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/tmp2_reg[34]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/tmp2_reg[35]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/tmp2_reg[36]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/tmp2_reg[37]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/tmp2_reg[38]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/tmp2_reg[39]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/tmp2_reg[40]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/tmp2_reg[41]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/tmp2_reg[42]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/tmp2_reg[43]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/tmp2_reg[44]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/tmp2_reg[45]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/tmp2_reg[46]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/tmp2_reg[47]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/tmp2_reg[48]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/tmp2_reg[49]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/tmp2_reg[50]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/tmp2_reg[51]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/tmp2_reg[52]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/tmp2_reg[53]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/tmp2_reg[54]) is unused and will be removed from module Global_Linear_Trasnformation_0_0.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1018.547 ; gain = 364.059
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1018.547 ; gain = 364.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1018.547 ; gain = 364.059
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1019.391 ; gain = 364.902
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1024.176 ; gain = 369.688
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1024.176 ; gain = 369.688
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1024.176 ; gain = 369.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1024.176 ; gain = 369.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1024.176 ; gain = 369.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1024.176 ; gain = 369.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |LUT1  |     1|
+|2     |LUT2  |     9|
+|3     |LUT3  |    55|
+|4     |LUT4  |    24|
+|5     |LUT5  |    39|
+|6     |LUT6  |   173|
+|7     |MUXF7 |    32|
+|8     |FDRE  |   204|
+|9     |FDSE  |     3|
+|10    |LD    |   351|
++------+------+------+
+
+Report Instance Areas: 
++------+--------------------------------------------+-----------------------------------+------+
+|      |Instance                                    |Module                             |Cells |
++------+--------------------------------------------+-----------------------------------+------+
+|1     |top                                         |                                   |   891|
+|2     |  U0                                        |Linear_Trasnformation_v1_0         |   891|
+|3     |    Linear_Trasnformation_v1_0_S00_AXI_inst |Linear_Trasnformation_v1_0_S00_AXI |   891|
+|4     |      LT                                    |Linear_trans_File                  |   558|
++------+--------------------------------------------+-----------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1024.176 ; gain = 369.688
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 28 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1024.176 ; gain = 250.461
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1024.176 ; gain = 369.688
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 383 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1041.531 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 351 instances were transformed.
+  LD => LDCE: 351 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+267 Infos, 42 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1041.531 ; gain = 653.578
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1041.531 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/Testing_on_card/Testing_on_ZEDBOARD.runs/Global_Linear_Trasnformation_0_0_synth_1/Global_Linear_Trasnformation_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP Global_Linear_Trasnformation_0_0, cache-ID = 93b431191ebfac78
+INFO: [Coretcl 2-1174] Renamed 3 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1041.531 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/Testing_on_card/Testing_on_ZEDBOARD.runs/Global_Linear_Trasnformation_0_0_synth_1/Global_Linear_Trasnformation_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Global_Linear_Trasnformation_0_0_utilization_synth.rpt -pb Global_Linear_Trasnformation_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Oct  1 16:56:59 2023...

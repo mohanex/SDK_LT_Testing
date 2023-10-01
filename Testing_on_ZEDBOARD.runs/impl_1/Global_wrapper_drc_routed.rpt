@@ -1,0 +1,81 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Sun Oct  1 16:58:45 2023
+| Host         : DESKTOP-CN4R7TV running 64-bit major release  (build 9200)
+| Command      : report_drc -file Global_wrapper_drc_routed.rpt -pb Global_wrapper_drc_routed.pb -rpx Global_wrapper_drc_routed.rpx
+| Design       : Global_wrapper
+| Device       : xc7z020clg484-1
+| Speed File   : -1
+| Design State : Fully Routed
+------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 9
++----------+----------+-------------------+------------+
+| Rule     | Severity | Description       | Violations |
++----------+----------+-------------------+------------+
+| PDRC-153 | Warning  | Gated clock check | 9          |
++----------+----------+-------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+PDRC-153#1 Warning
+Gated clock check  
+Net Global_i/Linear_Trasnformation_0/U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/E[0] is a gated clock net sourced by a combinational pin Global_i/Linear_Trasnformation_0/U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/slv_reg3_reg[31]_i_1/O, cell Global_i/Linear_Trasnformation_0/U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/slv_reg3_reg[31]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net Global_i/Linear_Trasnformation_0/U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/X0_reg[0]_i_2_n_0 is a gated clock net sourced by a combinational pin Global_i/Linear_Trasnformation_0/U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/X0_reg[0]_i_2/O, cell Global_i/Linear_Trasnformation_0/U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/X0_reg[0]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#3 Warning
+Gated clock check  
+Net Global_i/Linear_Trasnformation_0/U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/X1_reg[0]_i_2_n_0 is a gated clock net sourced by a combinational pin Global_i/Linear_Trasnformation_0/U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/X1_reg[0]_i_2/O, cell Global_i/Linear_Trasnformation_0/U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/X1_reg[0]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#4 Warning
+Gated clock check  
+Net Global_i/Linear_Trasnformation_0/U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/X2_reg[0]_i_2_n_0 is a gated clock net sourced by a combinational pin Global_i/Linear_Trasnformation_0/U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/X2_reg[0]_i_2/O, cell Global_i/Linear_Trasnformation_0/U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/X2_reg[0]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#5 Warning
+Gated clock check  
+Net Global_i/Linear_Trasnformation_0/U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/X3_reg[0]_i_2_n_0 is a gated clock net sourced by a combinational pin Global_i/Linear_Trasnformation_0/U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/X3_reg[0]_i_2/O, cell Global_i/Linear_Trasnformation_0/U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/X3_reg[0]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#6 Warning
+Gated clock check  
+Net Global_i/Linear_Trasnformation_0/U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/ready_busy_reg[0]_i_1_n_0 is a gated clock net sourced by a combinational pin Global_i/Linear_Trasnformation_0/U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/ready_busy_reg[0]_i_1/O, cell Global_i/Linear_Trasnformation_0/U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/ready_busy_reg[0]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#7 Warning
+Gated clock check  
+Net Global_i/Linear_Trasnformation_0/U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output is a gated clock net sourced by a combinational pin Global_i/Linear_Trasnformation_0/U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[0]_i_1/O, cell Global_i/Linear_Trasnformation_0/U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/sig_Bi_output_reg[0]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#8 Warning
+Gated clock check  
+Net Global_i/Linear_Trasnformation_0/U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/tmp2_reg[0]_i_1_n_0 is a gated clock net sourced by a combinational pin Global_i/Linear_Trasnformation_0/U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/tmp2_reg[0]_i_1/O, cell Global_i/Linear_Trasnformation_0/U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/tmp2_reg[0]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#9 Warning
+Gated clock check  
+Net Global_i/Linear_Trasnformation_0/U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/tmp_xoring_reg[0]_i_2_n_0 is a gated clock net sourced by a combinational pin Global_i/Linear_Trasnformation_0/U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/tmp_xoring_reg[0]_i_2/O, cell Global_i/Linear_Trasnformation_0/U0/Linear_Trasnformation_v1_0_S00_AXI_inst/LT/tmp_xoring_reg[0]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+

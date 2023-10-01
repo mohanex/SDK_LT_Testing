@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Oct  1 16:56:34 2023
+# Process ID: 1516
+# Current directory: E:/Testing_on_card/Testing_on_ZEDBOARD.runs/Global_Linear_Trasnformation_0_0_synth_1
+# Command line: vivado.exe -log Global_Linear_Trasnformation_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Global_Linear_Trasnformation_0_0.tcl
+# Log file: E:/Testing_on_card/Testing_on_ZEDBOARD.runs/Global_Linear_Trasnformation_0_0_synth_1/Global_Linear_Trasnformation_0_0.vds
+# Journal file: E:/Testing_on_card/Testing_on_ZEDBOARD.runs/Global_Linear_Trasnformation_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source Global_Linear_Trasnformation_0_0.tcl -notrace
